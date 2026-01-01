@@ -557,3 +557,20 @@ footer {
     padding: 0.4in;
     font-size: 12pt;
     color: #444; } }
+
+
+
+/* Center ONLY site title + subtitle in sidebar */
+header .sidebar-title-block {
+  text-align: center;
+}
+
+header .sidebar-title-block h1 {
+  text-align: center;
+}
+
+header .sidebar-title-block a.sidebar {
+  display: inline-block;
+}
+
+
