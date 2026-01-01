@@ -5,6 +5,8 @@ title = "home"
 <!-- Home Section -->
 ## Welcome!
 
+GUROLORAL.COM
+
 I am a Ph.D. student in economics at University of Mannheim.
 
 My research interests are in Public Economics, Applied Microeconomics and Behavioral Economics. 
