@@ -586,10 +586,10 @@ header .sidebar-button {
   font-size: 15px;
   font-weight: 500;          /* less bold */
 
-  color: #0d428e;
-  background: #f7f9fc;       /* very light background */
+  color: #000000;
+  background: #e4e6e9;       /* very light background */
 
-  border: 1px solid #cfd8e3; /* thin, soft border */
+  border: 1px solid #c2cad3; /* thin, soft border */
   border-radius: 10px;
 
   text-decoration: none;
@@ -601,6 +601,6 @@ header .sidebar-button {
 header .sidebar-button:hover,
 header .sidebar-button:focus {
   background: #eef3f9;          /* blue-ish background */
-  border-color: #0d428e;        /* blue border */
+  border-color: #000000;        /* blue border */
   color: #0d428e;
 }
