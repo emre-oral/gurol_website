@@ -5,6 +5,13 @@
 
 {{ $.Scratch.Set "currentPageTitle" .Title }}
 
+
+<!-- Site KBB Logo -->
+{{ with .Site.Params.logo2 }}
+    <img src="{{ . | relURL }}" alt="Logo" style="padding-bottom: 3em;"/>
+{{ end }}
+
+
 <!-- Static link to the homepage -->
 <p class="sidebar">
   <a class="sidebar" href="tel:+905XXXXXXXXX">📞 +90 505 269 65 57 Randevu Al</a>
