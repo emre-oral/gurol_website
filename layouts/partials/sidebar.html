@@ -20,8 +20,15 @@
 {{ $.Scratch.Set "currentPageTitle" .Title }}
 
 {{ range .Site.Menus.main }}
-<p class="sidebar"><a class="sidebar" href="{{ .URL | relURL }}">{{- .Name -}}</a></p>
+  <p class="sidebar">
+    <a class="sidebar" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relURL }}{{ end }}">
+      {{ .Name }}
+    </a>
+  </p>
 {{ end }}
+
+
+
 
 <p class="sidebar">
   <a class="sidebar" href="tel:+905052696557">Randevu Al: +90 505 269 65 57</a>

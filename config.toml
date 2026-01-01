@@ -3,7 +3,7 @@ title = "Op. Dr. Gürol Oral"
 theme = "academimal"
 sectionPagesMenu = "main"
 defaultContentLanguage = "en"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
 
 [author]
 name = "Op. Dr. Gürol Oral"
