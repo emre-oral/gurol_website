@@ -3,18 +3,22 @@
     <img src="{{ . | relURL }}" alt="Logo" style="padding-bottom: 1em;"/>
 {{ end }}
 
+<div style="text-align:center;">
+  <h1 class="sidebar">
+    <a class="sidebar" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+  </h1>
 
-<h1 class="sidebar"><a class="sidebar" href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
-<h1 style="font-size:18px; font-style:italic;">{{ .Site.Params.title }} <br/>
-{{ .Site.Params.institution }}</h1>
-<hr/>
+  <h1 style="font-size:18px; font-style:italic;">
+    {{ .Site.Params.title }} <br/>
+    {{ .Site.Params.institution }}
+  </h1>
+
+  <hr/>
+</div>
+
 
 {{ $.Scratch.Set "currentPageTitle" .Title }}
 
-
-
-
-<!-- Static link to the homepage -->
 <p class="sidebar">
   <a class="sidebar" href="tel:+905052696557">Randevu Al: +90 505 269 65 57</a>
 </p>
