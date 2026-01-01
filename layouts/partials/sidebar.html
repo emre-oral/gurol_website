@@ -19,17 +19,10 @@
 
 {{ $.Scratch.Set "currentPageTitle" .Title }}
 
-<!-- {{ range .Site.Menus.main }}
-<p class="sidebar"><a class="sidebar" href="{{ .URL | relURL }}">{{- .Name -}}</a></p>
-{{ end }} -->
-
 {{ range .Site.Menus.main }}
-  <p class="sidebar">
-    <a class="sidebar" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relURL }}{{ end }}">
-      {{ .Name }}
-    </a>
-  </p>
+<p class="sidebar"><a class="sidebar" href="{{ .URL | relURL }}">{{- .Name -}}</a></p>
 {{ end }}
+
 
 
 <p class="sidebar">
