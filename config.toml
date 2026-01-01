@@ -1,12 +1,12 @@
 relativeURLs = true
-title = "Emre Oral"
+title = "Gürol Oral"
 theme = "academimal"
 sectionPagesMenu = "main"
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [author]
-name = "Emre Oral"
+name = "Gürol Oral"
 
 [markup] # needed to add html in .md
   [markup.goldmark]
@@ -14,8 +14,8 @@ name = "Emre Oral"
       unsafe = true
 
 [params]
-title = "PhD Student in Economics"
-institution = "University of Mannheim"
-logo = "img/emre_workphoto.jpg"
+title = "KBB Uzmanı"
+institution = ""
+logo = "img/gurol_workphoto2.jpg"
 Twitter = "emreoral_"
 Email = "emre.oral@uni-mannheim.de"
