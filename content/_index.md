@@ -16,7 +16,7 @@ Randevu ve bilgi almak için:
 
 
 **Adres:** \
-Türkkuyusu Mah, Kıbrıs Şehitleri Cd. \
+Türkkuyusu Mah., Kıbrıs Şehitleri Cd. \
  No: 59/B, 48400 Bodrum/Muğla
 
 
