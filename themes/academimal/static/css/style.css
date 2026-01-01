@@ -586,10 +586,10 @@ header .sidebar-button {
   font-size: 15px;
   font-weight: 600;          /* less bold */
 
-  color: #000000;
-  background: #e4e6e9;       /* very light background */
+  color: #0d428e;
+  background: #f7f9fc;       /* very light background */
 
-  border: 1px solid #c2cad3; /* thin, soft border */
+  border: 1px solid #c0c8d3; /* thin, soft border */
   border-radius: 10px;
 
   text-decoration: none;
