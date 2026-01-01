@@ -2,10 +2,7 @@
 title = "home"
 +++
 
-<!-- Site Logo -->
-{{ with .Site.Params.logo }}
-    <img src="{{ . | relURL }}" alt="Logo" style="padding-bottom: 3em;"/>
-{{ end }}
+<img src="/img/gurol_workphoto2.jpg" alt="Logo" style="padding-bottom: 1.5em;" />
 
 <!-- Home Section -->
 ## Op. Dr. Gürol Oral
