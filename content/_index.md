@@ -7,7 +7,7 @@ title = "home"
 <!-- Home Section -->
 ## Op. Dr. Gürol Oral
 
-Kulak - Burun - Boğaz hastalıkları uzmanı Op. Dr. Gürol Oral Kıbrıs Şehitleri Caddesindeki muayenehanesinde hizmet vermektedir.
+Kulak - Burun - Boğaz Hastalıkları Uzmanı Op. Dr. Gürol Oral Kıbrıs Şehitleri Caddesindeki muayenehanesinde hizmet vermektedir.
 
 Randevu ve bilgi almak için: 
 
@@ -16,7 +16,7 @@ Randevu ve bilgi almak için:
 
 
 **Adres:** \
-Türkkuyusu, Kıbrıs Şehitleri Cd. \
+Türkkuyusu Mah, Kıbrıs Şehitleri Cd. \
  No: 59/B, 48400 Bodrum/Muğla
 
 
