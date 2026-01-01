@@ -1,0 +1,46 @@
+<h1 class="sidebar"><a class="sidebar" href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
+<h1 style="font-size:18px; font-style:italic;">{{ .Site.Params.title }} <br/>
+{{ .Site.Params.institution }}</h1>
+<hr/>
+
+{{ $.Scratch.Set "currentPageTitle" .Title }}
+
+<!-- Static link to the homepage -->
+<p class="sidebar"><a class="sidebar" href="{{ "/" | relURL }}">Home</a></p>
+
+{{ range .Site.Menus.main }}
+    <p class="sidebar"><a class="sidebar" href="{{ .URL | relURL }}">{{ .Name }}</a></p>
+    <!-- Check if the menu item is 'Research' and add sub-sections -->
+    {{ if eq .Name "Research" }}
+        <p class="sidebar" style="margin-left:2vw;"><a class="sidebar" href="{{ "home/#WorkingPapers" | relURL }}">Working Papers</a></p>
+        <p class="sidebar" style="margin-left:2vw;"><a class="sidebar" href="{{ "home/#WorksInProgress" | relURL }}">Publications</a></p>
+        <!-- Uncomment this if you want to add more sections -->
+        <!-- <p class="sidebar" style="margin-left:2vw;"><a class="sidebar" href="{{ "home/#PolicyPapers" | relURL }}">Book Chapters & Policy Papers</a></p> -->
+    {{ end }}
+{{ end }}
+
+<!-- External PDF Link -->
+<p class="sidebar"><a class="sidebar" href="/pdf/CV_EmreOral.pdf">CV</a></p>
+
+<!--
+<p class="sidebar"><a class="sidebar" href="https://www.dropbox.com/scl/fi/bs3hna8qn46dxwtm0t2ci/CV_EmreOral.pdf?rlkey=8wxds1px5u7fpwdkzo11yssv7&dl=0">CV</a></p>
+-->
+<!-- Twitter Link -->
+<p class="sidebar">
+    <img src="{{ "/icons/twitter-white.png" | relURL }}" class="octicons">
+    <a class="sidebar" href="https://twitter.com/{{ .Site.Params.Twitter }}" target="_blank">
+    @{{ .Site.Params.Twitter }}
+    </a>
+</p>
+
+<p class="sidebar">
+    <img src="{{ "/icons/scholar.png" | relURL }}" class="octicons">
+    <a class="sidebar" href="https://scholar.google.com/citations?user=Vy-eyx8AAAAJ&hl=en">Google Scholar</a> 
+</p>
+
+
+
+<!-- Site Logo -->
+{{ with .Site.Params.logo }}
+    <img src="{{ . | relURL }}" alt="Logo" style="padding-bottom: 3em;"/>
+{{ end }}

@@ -1,0 +1,22 @@
+relativeURLs = true
+googleAnalytics = "G-K32LVV900X"
+title = "Emre Oral"
+theme = "academimal"
+sectionPagesMenu = "main"
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[author]
+name = "Emre Oral"
+
+[markup] # needed to add html in .md
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+title = "PhD Student in Economics"
+institution = "University of Mannheim"
+logo = "img/emre_workphoto.jpg"
+Twitter = "emreoral_"
+Email = "emre.oral@uni-mannheim.de"
