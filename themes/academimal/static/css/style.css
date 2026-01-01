@@ -584,7 +584,7 @@ header .sidebar-button {
   text-align: center;
   font-family: "Lora", serif;
   font-size: 15px;
-  font-weight: 500;          /* less bold */
+  font-weight: 600;          /* less bold */
 
   color: #000000;
   background: #e4e6e9;       /* very light background */
