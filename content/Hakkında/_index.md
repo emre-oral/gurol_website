@@ -10,6 +10,6 @@ weight = 1
 
 3 sene Siirt Devlet Hastanesi’nde uzman hekim ve Başhekim olarak çalıştıktan sonra 2003 yılında Bodrum’a tayin oldum. 
 
-Bodrum Devlet Hastanesinde yirmi yıl görev yaptım. 2022 yılından bu yana ise kendi muayenehanemde hizmet vermekteyim. 
+Bodrum Devlet Hastanesinde yirmi yıl görev yaptım. 2022 yılından bu yana kendi muayenehanemde hizmet vermekteyim. 
 
 
