@@ -590,7 +590,7 @@ header .sidebar-button {
   background: #f7f9fc;       /* very light background */
 
   border: 1px solid #c0c8d3; /* thin, soft border */
-  border-radius: 10px;
+  border-radius: 8px;
 
   text-decoration: none;
   cursor: pointer;
