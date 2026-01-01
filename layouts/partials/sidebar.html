@@ -6,7 +6,10 @@
 {{ $.Scratch.Set "currentPageTitle" .Title }}
 
 <!-- Static link to the homepage -->
-<p class="sidebar"><a class="sidebar" href="{{ "/" | relURL }}">Home</a></p>
+<p class="sidebar">
+  <a class="sidebar" href="tel:+905XXXXXXXXX">📞 +90 505 269 65 57 Randevu Al</a>
+</p>
+
 
 {{ range .Site.Menus.main }}
     <p class="sidebar"><a class="sidebar" href="{{ .URL | relURL }}">{{ .Name }}</a></p>
