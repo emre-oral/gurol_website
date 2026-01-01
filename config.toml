@@ -14,8 +14,8 @@ name = "Op. Dr. Gürol Oral"
       unsafe = true
 
 [params]
-title = "Kulak Burun Boğaz Uzmanı"
-institution = "Bodrum, Muğla"
+title = "Kulak Burun Boğaz Hastalıkları Uzmanı"
+institution = ""
 logo = "img/gurol_workphoto2.jpg"
 logo2 = "pdf/kbb_logo.pdf"
 Twitter = "emreoral_"
