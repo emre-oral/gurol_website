@@ -1,3 +1,9 @@
+<!-- Site KBB Logo -->
+{{ with .Site.Params.logo2 }}
+    <img src="{{ . | relURL }}" alt="Logo" style="padding-bottom: 1em;"/>
+{{ end }}
+
+
 <h1 class="sidebar"><a class="sidebar" href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
 <h1 style="font-size:18px; font-style:italic;">{{ .Site.Params.title }} <br/>
 {{ .Site.Params.institution }}</h1>
@@ -6,10 +12,6 @@
 {{ $.Scratch.Set "currentPageTitle" .Title }}
 
 
-<!-- Site KBB Logo -->
-{{ with .Site.Params.logo2 }}
-    <img src="{{ . | relURL }}" alt="Logo" style="padding-bottom: 1em;"/>
-{{ end }}
 
 
 <!-- Static link to the homepage -->
