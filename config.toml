@@ -6,7 +6,7 @@ defaultContentLanguage = "en"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [author]
-name = "Gürol Oral"
+name = "Op. Dr. Gürol Oral"
 
 [markup] # needed to add html in .md
   [markup.goldmark]
@@ -14,8 +14,8 @@ name = "Gürol Oral"
       unsafe = true
 
 [params]
-title = "KBB Uzmanı"
-institution = ""
+title = "Kulak Burun Boğaz Uzmanı"
+institution = "Bodrum, Muğla"
 logo = "img/gurol_workphoto2.jpg"
 Twitter = "emreoral_"
 Email = "emre.oral@uni-mannheim.de"

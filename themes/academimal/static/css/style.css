@@ -388,7 +388,7 @@ img {
 header {
   float: left;
   position: fixed;
-  background: #3a4b55;
+  background: #308ece;
   top: 0px;
   left: 0px;
   bottom: 0px;
@@ -396,6 +396,7 @@ header {
   width: 20vw; 
   height: 100vh;
   -webkit-font-smoothing: subpixel-antialiased; }
+/* #16b5e4, #308ece, #0d428e */
 
 /* Header for top bar */
 
