@@ -577,13 +577,13 @@ header .sidebar-title-block a.sidebar {
 /* Sidebar call-to-action button */
 header .sidebar-button {
   display: block;
-  width: 70%;
+  width: 65%;
   margin: 1.6em auto;
-  padding: 0.8em 1em;
+  padding: 0.75em 1em;
 
   text-align: center;
   font-family: "Lora", serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;          /* less bold */
 
   color: #0d428e;
