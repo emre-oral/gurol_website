@@ -38,6 +38,39 @@ font-style: italic;
 src: url("../fonts/Lora/Lora-Italic-VariableFont_wght.ttf");
 src: url("../fonts/Lora/Lora-Italic-VariableFont_wght.ttf") format("ttf")}
 */
+
+/* ===== Layout (DESKTOP) ===== */
+
+.site-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;        /* TWO COLUMNS */
+  gap: 0px;
+  align-items: flex-start;
+}
+
+.site-header {
+  width: 280px;
+  flex-shrink: 0;
+  background: #fffdfd;
+  padding: 2.5vw;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: auto;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 760px;
+  padding: 2.5vw;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+
+
 .highlight table td {
   padding: 5px; }
 
@@ -385,7 +418,7 @@ img {
   /* Sidebar options */
 
   /* Header for left bar */
-header {
+/* header {
   float: left;
   position: fixed;
   background: #fffdfd;
@@ -395,7 +428,7 @@ header {
   padding: 2.5vw;
   width: 280px; 
   height: 100vh;
-  -webkit-font-smoothing: subpixel-antialiased; }
+  -webkit-font-smoothing: subpixel-antialiased; } */
   /* #fffdfd white */ 
   /* #e3e1e8 Grayish */
 /* #16b5e4, #308ece, #0d428e Logo Colors */
@@ -474,17 +507,17 @@ header ul a strong {
   color: #F3F6F7; }
 
   /* Section for use of leftbar */
-section {
+/* section {
   position: static;
   float: right;
   width: auto;
   flex: 1;
   max-width: 760px;
   margin: 0 auto;
-  margin-left: 280px;  /* same as header width */
+  margin-left: 280px;  
   padding: 2.5vw;
   word-wrap: break-word;
-  text-align: justify; }
+  text-align: justify; } */
 
     /* Section for use of topbar */
 
@@ -514,13 +547,13 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.25);
   margin: 20px 0;
 }
-
+/* 
 footer {
   width: 270px;
   float: left;
   position: fixed;
   bottom: 50px;
-  -webkit-font-smoothing: subpixel-antialiased; }
+  -webkit-font-smoothing: subpixel-antialiased; } */
 
 
 @media print, screen and (max-width: 810px) {
@@ -533,7 +566,7 @@ footer {
     padding: 0;
     margin: 0; }
 
-  header {
+  /* header {
     position: static;
     float: none;
     width: auto;
@@ -547,26 +580,37 @@ footer {
     float: none;
     position: static;
     width: auto;
-    padding: 8vw;}
+    padding: 8vw;} */
 
   .site-container {
     max-width: none;
     margin: 0;
+    padding: 0;
+    display: block;      /* <-- stacks sidebar and content */
+  }
+
+  .site-header {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding: 8vw;
+    padding-bottom: 8vw;
   }
 
   .main-content {
-    margin-left: 0;
     max-width: none;
+    padding: 8vw;
+    text-align: left;    /* optional: often nicer on mobile */
   }
 
-  header ul {
-    width: 99%; }
+  /* keep your existing nav styles if you like */
+  header ul { width: 99%; }
+  header li, header ul li + li + li { width: 33%; }
 
-  header li, header ul li + li + li {
-    width: 33%; }
+  img.nothomepage { display: none; }
 
-  img.nothomepage {
-  display: none; }}
+}
 
 @media print {
   body {
@@ -622,19 +666,6 @@ header .sidebar-button:focus {
 }
 
 
-.site-container {
-  max-width: 1200px;   /* controls how wide the site is */
-  margin: 0 auto;      /* centers it */
-  position: relative;
-}
-
-.site-container header {
-  left: calc((100vw - 1200px) / 2);
-}
 
 
-.main-content {
-  margin-left: 360px;   /* header width + breathing room */
-  padding: 2.5vw;
-  max-width: 760px;
-}
+
