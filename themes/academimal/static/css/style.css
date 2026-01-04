@@ -549,6 +549,16 @@ footer {
     width: auto;
     padding: 8vw;}
 
+  .site-container {
+    max-width: none;
+    margin: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    max-width: none;
+  }
+
   header ul {
     width: 99%; }
 
