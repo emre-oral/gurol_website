@@ -262,7 +262,7 @@ body {
 body {
   background-color:#fffdfd;
   margin: 0;
-  font: 14px/1.5 'Lora', serif;
+  font: 16px/1.5 'Lora', serif;
   color: #082132;
   font-weight: 400; }
 
@@ -388,15 +388,17 @@ img {
 header {
   float: left;
   position: fixed;
-  background: #e3e1e8;
+  background: #fffdfd;
   top: 0px;
-  left: 0px;
+  left: auto;
   bottom: 0px;
   padding: 2.5vw;
-  width: 20vw; 
+  width: 280px; 
   height: 100vh;
   -webkit-font-smoothing: subpixel-antialiased; }
-/* #16b5e4, #308ece, #0d428e */
+  /* #fffdfd white */ 
+  /* #e3e1e8 Grayish */
+/* #16b5e4, #308ece, #0d428e Logo Colors */
 
 /* Header for top bar */
 
@@ -475,7 +477,11 @@ header ul a strong {
 section {
   position: static;
   float: right;
-  width: 70vw;
+  width: auto;
+  flex: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  margin-left: 280px;  /* same as header width */
   padding: 2.5vw;
   word-wrap: break-word;
   text-align: justify; }
@@ -505,7 +511,7 @@ small {
 
 hr {
   border: none;
-  border-top: 1px solid #000;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
   margin: 20px 0;
 }
 
@@ -603,4 +609,22 @@ header .sidebar-button:focus {
   background: #eef3f9;          /* blue-ish background */
   border-color: #000000;        /* blue border */
   color: #0d428e;
+}
+
+
+.site-container {
+  max-width: 1200px;   /* controls how wide the site is */
+  margin: 0 auto;      /* centers it */
+  position: relative;
+}
+
+.site-container header {
+  left: calc((100vw - 1200px) / 2);
+}
+
+
+.main-content {
+  margin-left: 360px;   /* header width + breathing room */
+  padding: 2.5vw;
+  max-width: 760px;
 }

@@ -1,5 +1,24 @@
-{{ partial "header.html" . }}
-<section>
-{{ block "main" . }}
-{{ end }}
-</section>
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Site.Title }} | {{ .Title }}</title>
+
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+
+<body>
+  <div class="site-container">
+
+    <header class="site-header">
+      {{ partial "sidebar.html" . }}
+    </header>
+
+    <main class="main-content">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+  </div>
+</body>
+</html>
