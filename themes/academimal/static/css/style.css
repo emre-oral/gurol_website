@@ -603,6 +603,11 @@ footer {
     padding: 8vw;
     text-align: left;    /* optional: often nicer on mobile */
   }
+  
+  .image-row {
+    flex-direction: column;
+  }
+
 
   /* keep your existing nav styles if you like */
   header ul { width: 99%; }
@@ -669,3 +674,14 @@ header .sidebar-button:focus {
 
 
 
+
+.image-row {
+  display: flex;
+  gap: 16px;           /* space between images */
+  align-items: center;
+}
+
+/* .image-row img {
+  width: 280px;
+  height: auto;
+} */

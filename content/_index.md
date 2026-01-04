@@ -2,9 +2,13 @@
 title = "home"
 +++
 
-<img src="/img/gurol_workphoto2.jpg" 
-     alt="Logo" 
-     style="width: 280px; height: auto; padding-bottom: 0.5em;" />
+
+  <img src="/img/gurol_workphoto2.jpg"
+       alt="Photo 1" 
+       style="width: 280px; height: auto; padding-bottom: 0.5em;" />
+
+
+
 
 <!-- Home Section -->
 ## Op. Dr. Gürol Oral
