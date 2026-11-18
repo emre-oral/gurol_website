@@ -2,7 +2,8 @@ relativeURLs = true
 title = "Op. Dr. Gürol Oral"
 theme = "academimal"
 sectionPagesMenu = "main"
-defaultContentLanguage = "en"
+defaultContentLanguage = "tr"
+defaultContentLanguageInSubdir = false # Turkish at /, English at /en/
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [author]
@@ -13,8 +14,19 @@ name = "Op. Dr. Gürol Oral"
     [markup.goldmark.renderer]
       unsafe = true
 
+[languages]
+  [languages.tr]
+  languageName = "Türkçe"
+  weight = 1
+    [languages.tr.params]
+    title = "Kulak Burun Boğaz Hastalıkları Uzmanı"
+  [languages.en]
+  languageName = "English"
+  weight = 2
+    [languages.en.params]
+    title = "Ear, Nose and Throat (ENT) Specialist"
+
 [params]
-title = "Kulak Burun Boğaz Hastalıkları Uzmanı"
 institution = ""
 logo = "img/gurol_workphoto2.jpg"
 logo2 = "pdf/bos.svg"

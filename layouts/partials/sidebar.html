@@ -7,7 +7,7 @@
 
 <div class="sidebar-title-block">
   <h1 class="sidebar">
-    <a class="sidebar" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+    <a class="sidebar" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
   </h1>
 
   <h1 style="font-size:18px;">
@@ -17,8 +17,20 @@
 
   <a href="tel:+905052696557" class="sidebar-button">
     <span style="margin-right:0.75em;">📞</span>
-    Randevu Al
+    {{ i18n "bookAppointment" }}
   </a>
+
+  <!-- Language switcher: links to this page in the other language -->
+  <p class="lang-switch" style="font-size:15px; letter-spacing:0.05em; margin:0 0 1em 0;">
+    {{- range $i, $t := .AllTranslations -}}
+      {{- if $i }} | {{ end -}}
+      {{- if eq $t.Lang $.Lang -}}
+        <strong>{{ upper $t.Lang }}</strong>
+      {{- else -}}
+        <a href="{{ $t.RelPermalink }}" hreflang="{{ $t.Lang }}" lang="{{ $t.Lang }}">{{ upper $t.Lang }}</a>
+      {{- end -}}
+    {{- end -}}
+  </p>
 
   <hr/>
 </div>
